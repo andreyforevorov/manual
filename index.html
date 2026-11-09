@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kernel Ghost - Руководство модератора</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <header class="nav-wrapper">
+    <nav class="nav-capsule">
+      <div class="nav-brand">
+        <div class="nav-logo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span class="nav-brand-text">Kernel Ghost</span>
+        <div class="nav-divider"></div>
+      </div>
+      <div class="nav-tabs-scroll">
+        <div class="nav-tabs">
+          <button class="nav-tab active" data-tab="tab-home">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Главная
+          </button>
+          <button class="nav-tab" data-tab="tab-manual">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Полный мануал
+          </button>
+          <button class="nav-tab" data-tab="tab-levels">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Уровни проверки
+          </button>
+          <button class="nav-tab" data-tab="tab-ghost">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 10 10"/><path d="m15 9 3-3"/><path d="m18 6 3-3"/></svg>
+            Ghost-клиенты
+          </button>
+          <button class="nav-tab" data-tab="tab-programs">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+            Программы
+          </button>
+          <button class="nav-tab" data-tab="tab-theory">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            Теория и память
+          </button>
+          <button class="nav-tab" data-tab="tab-rules">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Обязанности
+          </button>
+          <button class="nav-tab" data-tab="tab-paths">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Пути и скрипты
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <section id="tab-home" class="tab-section active">
+
+      <div class="hero-section">
+        <div class="hero-left">
+          <div class="hero-badges">
+            <span class="badge-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              База знаний
+            </span>
+            <span class="badge-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              От базы до Memory-форензики
+            </span>
+            <span class="badge-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Для модераторов и игроков
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-white">Полное руководство по</span>
+            <span class="hero-title-gradient">поиску скрытых читов</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Профессиональный мануал по проверкам в Minecraft: от быстрого обнаружения обычных клиентов до глубокого анализа памяти, инжекторов, шеллкода и скрытых DLC.
+          </p>
+
+          <p class="hero-author">
+            Автор: <span class="hero-author-name">andrey forevorov</span>
+          </p>
+
+          <div class="hero-buttons">
+            <div class="hero-buttons-row">
+              <button class="btn-primary" onclick="switchTab('tab-levels')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Начать обучение
+              </button>
+              <button class="btn-secondary" onclick="switchTab('tab-manual')">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Полный мануал
+              </button>
+              <button class="btn-secondary" onclick="switchTab('tab-programs')">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                База программ
+              </button>
+            </div>
+            <div class="hero-buttons-row">
+              <button class="btn-ghost" onclick="switchTab('tab-theory')">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                Устройство памяти
+              </button>
+              <button class="btn-ghost" onclick="switchTab('tab-paths')">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Пути и скрипты
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stats-divider"></div>
+            <div class="hero-stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Уровня сложности</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">12+</span>
+                <span class="stat-label">Программ в базе</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Ghost-клиентов</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Практика</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="levels-widget">
+            <div class="levels-widget-header">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              УРОВНИ ПРОВЕРКИ
+            </div>
+            <div class="level-item" onclick="switchTabLevel('tab-levels', 'level-basic')">
+              <div class="level-dot level-dot-glow"></div>
+              <div class="level-info">
+                <span class="level-name">Базовый</span>
+                <span class="level-desc">Использование данных, корзина, быстрый поиск</span>
+              </div>
+              <span class="level-badge badge-easy">EASY</span>
+            </div>
+            <div class="level-item" onclick="switchTabLevel('tab-levels', 'level-mid')">
+              <div class="level-dot level-dot-glow"></div>
+              <div class="level-info">
+                <span class="level-name">Средний</span>
+                <span class="level-desc">Системные утилиты, базовый реестр, службы</span>
+              </div>
+              <span class="level-badge badge-mid">MID</span>
+            </div>
+            <div class="level-item" onclick="switchTabLevel('tab-levels', 'level-hard')">
+              <div class="level-dot level-dot-glow"></div>
+              <div class="level-info">
+                <span class="level-name">Сложный</span>
+                <span class="level-desc">Глубокий реестр, консоль, декомпиляция .jar</span>
+              </div>
+              <span class="level-badge badge-hard">HARD</span>
+            </div>
+            <div class="level-item" onclick="switchTabLevel('tab-levels', 'level-ultra')">
+              <div class="level-dot level-dot-glow"></div>
+              <div class="level-info">
+                <span class="level-name">Ультра (Kernel Ghost)</span>
+                <span class="level-desc">Память, хендлеры, shellcode, хуки и потоки</span>
+              </div>
+              <span class="level-badge badge-ghost">GHOST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sections-block">
+        <div class="sections-header">
+          <span class="sections-eyebrow">- ЧТО ВНУТРИ -</span>
+          <h2 class="sections-title">Разделы руководства</h2>
+          <p class="sections-subtitle">Изучай последовательно или переходи сразу к нужной теме.</p>
+        </div>
+
+        <div class="sections-grid">
+
+          <div class="section-card" onclick="switchTab('tab-manual')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Полный мануал</h3>
+              <p class="section-card-desc">Пошаговый алгоритм проверки игрока от ввода команд в чате и проверки папок до анализа сети и программ.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="section-card" onclick="switchTab('tab-levels')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Уровни проверки</h3>
+              <p class="section-card-desc">4 уровня от быстрого поиска до глубокой форензики памяти. Пошаговые инструкции, реестр и команды.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="section-card" onclick="switchTab('tab-ghost')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 10 10"/><path d="m15 9 3-3"/><path d="m18 6 3-3"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Ghost-клиенты</h3>
+              <p class="section-card-desc">Cortex, Mhub, WayneDLC, AuroraDLC, DoomsDay, Liminar, SystemDLC и самописные читы. Методики обнаружения.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="section-card" onclick="switchTab('tab-programs')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Программы</h3>
+              <p class="section-card-desc">Everything, Process Hacker 2, JournalTrace, BAMParser и другие утилиты с принципом работы и фильтрами.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="section-card" onclick="switchTab('tab-folders')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Папки и файлы</h3>
+              <p class="section-card-desc">Проверка .minecraft, сверка веса версий, libraries, LabyMod, Prefetch, Recent и анализ даты изменения.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="section-card" onclick="switchTab('tab-theory')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Теория и память</h3>
+              <p class="section-card-desc">Архитектура Ring 3 / Ring 0, регионы памяти RWX, шеллкод, хуки, JVM, маскировка MZ и декомпиляция кода.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="section-card" onclick="switchTab('tab-rules')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Обязанности модератора</h3>
+              <p class="section-card-desc">Правила КП, регламент проведения проверок, запреты при работе с ПК игрока, спорные ситуации и норма.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <div class="section-card" onclick="switchTab('tab-paths')">
+            <div class="section-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="section-card-body">
+              <h3 class="section-card-title">Пути и скрипты</h3>
+              <p class="section-card-desc">Быстрая шпаргалка для копирования в 1 клик: все ветки Regedit, скрипты PowerShell/CMD и регулярки Everything.</p>
+            </div>
+            <div class="section-card-link">
+              <span>-> Открыть</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="tab-manual" class="tab-section"></section>
+
+    <section id="tab-levels" class="tab-section"></section>
+
+    <section id="tab-ghost" class="tab-section"></section>
+
+    <section id="tab-programs" class="tab-section"></section>
+
+    <section id="tab-folders" class="tab-section">
+      <div class="placeholder-content">
+        <div class="placeholder-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h2>Папки и файлы</h2>
+        <p>Этот раздел будет заполнен в следующем промпте.</p>
+      </div>
+    </section>
+
+    <section id="tab-theory" class="tab-section"></section>
+
+    <section id="tab-rules" class="tab-section"></section>
+
+    <section id="tab-paths" class="tab-section"></section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span class="site-footer-inner">Автор: <span class="hero-author-name">andrey forevorov</span></span>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="manual.js"></script>
+  <script src="levels.js"></script>
+  <script src="levels-ultra.js"></script>
+  <script src="ghost-clients.js"></script>
+  <script src="programs.js"></script>
+  <script src="theory.js"></script>
+  <script src="rules.js"></script>
+  <script src="paths.js"></script>
+</body>
+</html>
