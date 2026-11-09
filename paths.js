@@ -115,6 +115,8 @@ foreach ($s in $services) {
         `powershell Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass && powershell Invoke-Expression (Invoke-RestMethod https://raw.githubusercontent.com/praiselily/lilith-ps/refs/heads/main/Service-Enabler.ps1)`)}
       ${cmdCard('Проверка наличия VPN / Proxy соединений', '',
         `powershell -ExecutionPolicy Bypass -Command "iex (irm 'https://raw.githubusercontent.com/TeslaPros/VPNChecker/main/VPNFinder.ps1')"`)}
+      ${cmdCard('MiniSS - поиск подозрительных процессов и скрытых угроз', '',
+        `[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; & ([scriptblock]::Create((irm https://raw.githubusercontent.com/SeniorHere/MiniSS/main/MiniSS.ps1))) -NoPause`)}
     </div>
   `;
 
